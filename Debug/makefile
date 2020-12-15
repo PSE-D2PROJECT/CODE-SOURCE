@@ -14,6 +14,7 @@ RM := rm -rf
 -include lib/bsp/MPU6050/subdir.mk
 -include lib/bsp/subdir.mk
 -include lib/subdir.mk
+-include appli/persolib/subdir.mk
 -include appli/subdir.mk
 -include subdir.mk
 -include objects.mk

@@ -16,6 +16,7 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 appli \
+appli/persolib \
 lib/bsp/MPU6050 \
 lib/bsp \
 lib/bsp/tft_ili9341 \

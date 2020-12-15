@@ -17,65 +17,49 @@
 //Configuration des broches utilis�es...
 //Ces macros permettent d'utiliser dans le code des noms explicites (LED_GREEN, ...)
 #if NUCLEO
+
+	//---------------------------------------------------------//
+	// RGB
 	#define LED_RED_GPIO							GPIOA
 	#define LED_RED_PIN								GPIO_PIN_10
-
-	#define LED_YELLOW_GPIO							GPIOB
-	#define LED_YELLOW_PIN							GPIO_PIN_5
-
+	#define LED_BLUE_GPIO							GPIOB
+	#define LED_BLUE_PIN							GPIO_PIN_14
 	#define LED_GREEN_GPIO							GPIOB
-	#define LED_GREEN_PIN							GPIO_PIN_3
-
+	#define LED_GREEN_PIN							GPIO_PIN_5
+	// FIN RGB
+	//---------------------------------------------------------//
+	// INDICATOR LEDS
+	#define INDICATOR_LED_I_GPIO					GPIOA
+	#define INDICATOR_LED_I_PIN						GPIO_PIN_2
+	#define INDICATOR_LED_II_GPIO					GPIOA
+	#define INDICATOR_LED_II_PIN					GPIO_PIN_3
+	#define INDICATOR_LED_III_GPIO					GPIOB
+	#define INDICATOR_LED_III_PIN					GPIO_PIN_6
+	#define INDICATOR_LED_IV_GPIO					GPIOB
+	#define INDICATOR_LED_IV_PIN					GPIO_PIN_7
+	// FIN INDICATOR LEDS
+	//---------------------------------------------------------//
+	// BP
 	#define BLUE_BUTTON_GPIO						GPIOC
 	#define BLUE_BUTTON_PIN 						GPIO_PIN_13
-
+	// FIN BP
+	//---------------------------------------------------------//
+	// BUZZER
 	#define BUZZER_GPIO								GPIOB
-	#define BUZZER_PIN								GPIO_PIN_4
-
-//	#define INDICATOR_LED_I_GPIO					GPIOA
-//	#define INDICATOR_LED_I_PIN						GPIO_PIN_2
-//
-//	#define INDICATOR_LED_II_GPIO					GPIOC
-//	#define INDICATOR_LED_II_PIN					GPIO_PIN_2
-//
-//	#define INDICATOR_LED_III_GPIO					GPIOC
-//	#define INDICATOR_LED_III_PIN					GPIO_PIN_3
-//
-//	#define INDICATOR_LED_IV_GPIO					GPIOD
-//	#define INDICATOR_LED_IV_PIN					GPIO_PIN_0
-
-//	#define TRIG_US1_GPIO							GPIOA
-//	#define TRIG_US1_PIN							GPIO_PIN_15
-//	#define ECHO_US1_GPIO							GPIOA
-//	#define ECHO_US1_PIN							GPIO_PIN_14
-//
-//	#define TRIG_US2_GPIO							GPIOB
-//	#define TRIG_US2_PIN							GPIO_PIN_7
-//	#define ECHO_US2_GPIO							GPIOC
-//	#define ECHO_US2_PIN							GPIO_PIN_10
-
-//	#define TRIG_US3_GPIO							GPIOC
-//	#define TRIG_US3_PIN							GPIO_PIN_14
-//	#define ECHO_US3_GPIO							GPIOC
-//	#define ECHO_US3_PIN							GPIO_PIN_15
-//
-//	#define TRIG_US4_GPIO							GPIOC
-//	#define TRIG_US4_PIN							GPIO_PIN_11
-//	#define ECHO_US4_GPIO							GPIOD
-//	#define ECHO_US4_PIN							GPIO_PIN_2
-
+	#define BUZZER_PIN								GPIO_PIN_8
+	// FIN BUZZER
+	//---------------------------------------------------------//
+	// MOTORS
 	#define MOTOR_GAV_GPIO 							GPIOB
 	#define MOTOR_GAV_PIN 							GPIO_PIN_1
-
 	#define MOTOR_GAR_GPIO 							GPIOB
-	#define MOTOR_GAR_PIN 							GPIO_PIN_2
-
+	#define MOTOR_GAR_PIN 							GPIO_PIN_9
 	#define MOTOR_DAV_GPIO 							GPIOB
-	#define MOTOR_DAV_PIN 							GPIO_PIN_11
-
+	#define MOTOR_DAV_PIN 							GPIO_PIN_13
 	#define MOTOR_DAR_GPIO 							GPIOB
 	#define MOTOR_DAR_PIN 							GPIO_PIN_12
-
+	// FIN MOTORS
+	//---------------------------------------------------------//
 
 	#if BLUEPILL
 		#error "Vous ne pouvez pas d�finir � la fois NUCLEO et BLUEPILL !"
@@ -174,7 +158,7 @@
 #define USE_BMP180				0	//Capteur de pression
 #define USE_MOTOR_DC			0
 #define USE_RTC					0
-#define USE_PWM					0
+#define USE_PWM					1
 #define USE_ESP8266				1	//Module Wifi
 #define USE_NFC03A1				0
 #define USE_EPAPER				0

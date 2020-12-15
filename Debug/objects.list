@@ -1,4 +1,7 @@
 "appli/main.o"
+"appli/persolib/actionneurs.o"
+"appli/persolib/games.o"
+"appli/persolib/motors.o"
 "lib/bsp/MPU6050/stm32f1_mpu6050.o"
 "lib/bsp/stm32f1_adc.o"
 "lib/bsp/stm32f1_gpio.o"

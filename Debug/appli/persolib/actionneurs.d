@@ -1,4 +1,5 @@
-appli/main.o: ../appli/main.c \
+appli/persolib/actionneurs.o: ../appli/persolib/actionneurs.c \
+ ../appli/persolib/actionneurs.h \
  C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/hal/inc/stm32f1xx_hal.h \
  C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/hal/inc/stm32f1xx_hal_conf.h \
  C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/hal/inc/stm32f1xx_hal_rcc.h \
@@ -42,20 +43,10 @@ appli/main.o: ../appli/main.c \
  C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/hal/inc/stm32f1xx_ll_usb.h \
  C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/hal/inc/stm32f1xx_hal_pcd_ex.h \
  C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/hal/inc/stm32f1xx_hal_hcd.h \
- C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1xx_nucleo.h \
- C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/appli/config.h \
- C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1_uart.h \
  C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/macro_types.h \
- C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1_sys.h \
- C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1_uart.h \
- C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/macro_types.h \
- C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1_adc.h \
- C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1_gpio.h \
- C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1_timer.h \
- C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/tft_ili9341/stm32f1_ili9341.h \
- C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/tft_ili9341/stm32f1_fonts.h \
- ../appli/persolib/actionneurs.h ../appli/persolib/games.h \
- ../appli/persolib/motors.h
+ C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/appli/config.h
+
+../appli/persolib/actionneurs.h:
 
 C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/hal/inc/stm32f1xx_hal.h:
 
@@ -143,32 +134,6 @@ C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-g
 
 C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/hal/inc/stm32f1xx_hal_hcd.h:
 
-C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1xx_nucleo.h:
+C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/macro_types.h:
 
 C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/appli/config.h:
-
-C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1_uart.h:
-
-C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/macro_types.h:
-
-C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1_sys.h:
-
-C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1_uart.h:
-
-C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/macro_types.h:
-
-C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1_adc.h:
-
-C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1_gpio.h:
-
-C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/stm32f1_timer.h:
-
-C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/tft_ili9341/stm32f1_ili9341.h:
-
-C:/Users/simon/OneDrive/Documents/ESEO/I1/SYSTEMES_EMBARQUES/FINAL_PSE/mission-gravity/lib/bsp/tft_ili9341/stm32f1_fonts.h:
-
-../appli/persolib/actionneurs.h:
-
-../appli/persolib/games.h:
-
-../appli/persolib/motors.h:
